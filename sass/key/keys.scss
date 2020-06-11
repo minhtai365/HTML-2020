@@ -1,0 +1,8 @@
+$height-button:40px;
+$ellipse:ellipse(85% 63% at 50% 1%);
+@mixin clearfix {
+    &::after{
+        content: "";
+        clear: both;
+    }
+}

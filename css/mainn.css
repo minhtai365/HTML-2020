@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: myfont; }
+
+@font-face {
+  font-family: myfont;
+  src: url(../font/Bauman.ttf); }
+
+.header {
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.3), rgba(170, 170, 123, 0.3)), url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  clip-path: ellipse(85% 63% at 50% 1%);
+  /* clip-path: ellipse(55% 40% at 50% 11%); */
+  position: relative;
+  animation: to-bottom 2s; }
+
+.header__logo-box {
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 20%; }
+
+.header__logo-box img {
+  margin-top: 10px;
+  transform: scale(1.5, 1.5);
+  animation: laclu 8s infinite; }
+
+.title {
+  position: absolute;
+  top: 20%;
+  left: 37%; }
+
+.title__main {
+  font-size: 40px;
+  color: red;
+  font-weight: bold;
+  text-transform: uppercase;
+  animation: to-left 2s; }
+
+.title__sub {
+  color: #ee3957;
+  font-size: 30px;
+  animation: to-right 2s; }
+
+.button {
+  position: relative;
+  background: white;
+  font-size: 20px;
+  /* padding: 10px; */
+  width: 170px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 80px;
+  margin-top: 20px;
+  border-radius: 100px;
+  text-align: center;
+  opacity: 1;
+  animation: to-top 1s;
+  cursor: pointer; }
+
+.button::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: white;
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 100px;
+  text-align: center;
+  opacity: 1;
+  /* animation: to-top 1s; */
+  cursor: pointer; }
+
+.button:hover::after {
+  animation: load 1s infinite; }
+
+@keyframes load {
+  to {
+    transform: scale(1.5, 1.5);
+    opacity: 0; }
+  from {
+    transform: scale(1, 1);
+    opacity: 1; } }
+
+@keyframes to-left {
+  from {
+    transform: translate(150px, 0); }
+  to {
+    transform: translate(0, 0); } }
+
+@keyframes to-right {
+  0% {
+    transform: translate(-150px, 0); }
+  100% {
+    transform: translate(0, 0); } }
+
+@keyframes to-top {
+  from {
+    transform: translate(0, 100px); }
+  to {
+    transform: translate(0, 0); } }
+
+@keyframes to-bottom {
+  from {
+    transform: translate(0, -100px); }
+  to {
+    transform: translate(0, 0); } }
+
+@keyframes laclu {
+  0% {
+    transform: scale(1, 1);
+    opacity: 1; }
+  50% {
+    transform: scale(1.2, 1.2);
+    opacity: 0.3; }
+  100% {
+    transform: scale(1, 1);
+    opacity: 1; } }
