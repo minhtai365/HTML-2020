@@ -90,7 +90,7 @@
         </div>
         </div>
     </section>
-    <section class="content3">
+    <section class="content3" id="content3">
         <div class="container__header">
             <h3>our courses</h3>
         </div>
@@ -142,7 +142,7 @@
                     <p>only</p>
                     <h3>$16</h3>
                     <div class="oncard button">
-                        <a href="">Download now</a>
+                        <a href="#showbox">Download now</a>
                     </div>
                 </div>     
             </div>            
@@ -166,6 +166,7 @@
             <p>Chúng ta vẫn biết rằng, làm việc với một đoạn văn bản dễ đọc và rõ nghĩa dễ gây rối trí và cản trở việc tập trung vào yếu tố trình bày văn bản.
                 Lorem Ipsum có ưu điểm hơn so với đoạn văn bản chỉ gồm nội dung kiểu "Nội dung, nội dung, nội dung" là nó khiến văn bản giống thật hơn, bình thường hơn.
         </div> 
+
         <div class="animation__container--content">
             <div class="khungimg vienimg">
                 <div class="chitiet">Chi tiết</div>
@@ -183,13 +184,83 @@
     <section class="entroll">
         <div class="entroll__cover">
             <div class="entroll__cover--content">
-                <h3>entroll Now</h3>
-                <input type="text" value="Full name"><br>
-                <input type="text" value="Email"><br>
-                <input type="radio" name="" id="gender" text="Male">
-                <input type="radio" name="" id="gender" value="Female"><br>
-                <input type="submit" value="Submit">
+                <div class="container__header">
+                <h5>entroll Now</h5>
+                </div>
+                <input type="text" class="nhap" placeholder="Full name" id="fullname" required>
+                <label for="fullname">Full name</label>
+                <input type="email" class="nhap" placeholder="Email" id="email" required>
+                <label for="email">Email</label>
+                <div class="radio__group">
+                    <input type="radio" name="gender" id="male">
+                    <label for="male">Male</label>
+                </div>
+                <div class="radio__group">
+                    <input type="radio" name="gender" id="female">
+                    <label for="female"><span></span>Female</label>
+                </div>
+                <!-- <div class="button xanh">
+                    <a href="#">Submit</a>
+                </div>                    -->
+                <input class="btn-submit xanh" type="submit" value="Submit">
             </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="logo__box">
+            <div class="logo__box--logo">
+                <img src="./img/logo.png" alt="My-Logo">
+            </div>
+            <div class="container__header">
+                <h5>Select From</h5>
+            </div>
+        </div>
+        <div class="footer__left">
+            <ul>
+                <li><a href="">My chose</a></li>
+                <li><a href="">My like</a></li>
+                <li><a href="">My follow</a></li>
+                <li><a href="">My sub</a></li>
+            </ul>
+        </div>
+        <div class="footer__right">
+            Nhiều phần mềm thiết kế giao diện web và dàn trang ngày nay đã sử dụng Lorem Ipsum làm đoạn văn bản giả,và nếu bạn thử tìm các đoạn "Lorem ipsum" trên mạng thì sẽ khám phá ra nhiều trang web hiện vẫn đang trong quá trình xây dựng.
+            Có nhiều phiên bản khác nhau đã xuất hiện
+        </div>
+    </section>
+    <section class="showbox" id="showbox">
+        <div class="showbox__content">
+            <div class="showbox__content--img">
+                <img src="./img/a.jpeg" alt="">
+                <img src="./img/b.jpg" alt="">
+            </div>
+            <div class="showbox__content--text">            
+                <a href="#content3" class="close">&times;</a>
+                <div class="container__header">
+                    <h5>entroll now</h5>           
+                </div>
+                <div class="text__important">Có nhiều phiên bản khác nhau đã xuất hiện</div>
+                <div class="content__text">
+                    Nhiều phần mềm thiết kế giao diện web và dàn trang ngày nay đã sử dụng Lorem Ipsum làm đoạn văn bản giả,và nếu bạn thử tìm các đoạn "Lorem ipsum" trên mạng thì sẽ khám phá ra nhiều trang web hiện vẫn đang trong quá trình xây dựng.
+                    Có nhiều phiên bản khác nhau đã xuất hiện. Nhiều phần mềm thiết kế giao diện web và dàn trang ngày nay đã sử dụng Lorem Ipsum làm đoạn văn bản giả,và nếu bạn thử tìm các đoạn "Lorem ipsum" trên mạng hiện vẫn đang trong quá trình xây dựng.                </div>
+                <div class="button xanh"><a href="">entroll now</a></div>
+            </div>
+        </div>
+    </section>
+    <section class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-check">
+        <label for="navi-check" class="navigation__button">
+            <span class="navigation-icon">&nbsp;</span>
+        </label>
+        <div class="navigation__backgroud"></div>
+        <div class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__list--item"><a href="#" class="navigation__list--link">About Us</a></li>
+                <li class="navigation__list--item"><a href="#" class="navigation__list--link">Our Skills</a></li>
+                <li class="navigation__list--item"><a href="#" class="navigation__list--link">Our courses</a></li>
+                <li class="navigation__list--item"><a href="#" class="navigation__list--link">Team Member</a></li>
+                <li class="navigation__list--item"><a href="#" class="navigation__list--link">Download</a></li>
+            </ul>
         </div>
     </section>
 </body>
